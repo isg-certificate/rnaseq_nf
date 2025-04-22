@@ -32,7 +32,7 @@ nextflow run nf-core/rnaseq \
     --fasta ${GENOME} \
     --gtf ${GTF} \
     -profile xanadu \
-    -with-trace \
-    -with-report \
-    -with-timeline \
+    -with-trace trace.txt \
+    -with-report report.html \
+    -with-timeline timeline.html \
     -with-dag dag.png
